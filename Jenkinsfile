@@ -56,7 +56,7 @@ pipeline {
                         drafter.addData(PMD, credentials, newJobDraft.id,
                                         readFile("out/dataset.trig"), "application/trig;charset=UTF-8")
                         drafter.addData(PMD, credentials, newJobDraft.id,
-                                        readFile("out/observations.ttl", "text/turtle;charset=UTF-8"),
+                                        readFile("out/observations.ttl"), "text/turtle;charset=UTF-8",
                                         "http://gss-data.org.uk/graph/${datasetPath}")
                     }
                 }
