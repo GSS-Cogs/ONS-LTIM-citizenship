@@ -32,8 +32,7 @@ pipeline {
                     }
                     jobDraft.replace()
                     uploadTidy(csvs,
-                                   'https://github.com/ONS-OpenData/ref_migration/raw/master/columns.csv',
-                                   'ONS LTIM citizenship')
+                               'https://github.com/ONS-OpenData/ref_migration/raw/master/columns.csv')
                 }
             }
         }
